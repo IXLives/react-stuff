@@ -1,2 +1,2 @@
 # React Projects
-1. React Counter - state management, tailwind practiec
+1. React Counter - state management, tailwind practice
