@@ -1,10 +1,27 @@
-function App() {
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 
+function App() {
   return (
-    <div className='min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue via-gray-600 to-gray-900 text-white px-4'>
-        <h1 className='text-5xl font-extrabold mb-8 text-white drop-shadow-lg uppercase tracking-wide'>YouTube</h1>
+    <div>
+      <div className="flex flex-col">
+        {/* header section */}
+        <div>
+          <Header />
+        </div>
+
+        <div className="flex items-center justify-between gap-10">
+          {/* sidebar */}
+          <div>
+            <Sidebar />
+          </div>
+
+          {/* content wrapper */}
+          <div></div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
