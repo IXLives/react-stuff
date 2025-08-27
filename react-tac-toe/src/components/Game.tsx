@@ -9,7 +9,7 @@ export default function Game() {
   const xIsNext = currentMove % 2 === 0;
   const currentSquares = history[currentMove];
 
-  function handlePlay(nextSquares: (string | null)[], moveIndex: number) {
+  function handlePlay(nextSquares: (string | null)[]) {
     const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
     setHistory(nextHistory);
     setCurrentMove(nextHistory.length - 1);
@@ -46,7 +46,7 @@ export default function Game() {
       <Board
         xIsNext={xIsNext}
         squares={currentSquares}
-        onPlay={(nextSquares) => handlePlay(nextSquares, currentMove)}
+        onPlay={(nextSquares) => handlePlay(nextSquares)}
         onRestart={handleRestart}
       />
       <div>
