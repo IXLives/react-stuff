@@ -1,8 +1,8 @@
+import Hangman from "./components/hangman";
+
 function App() {
   return (
-    <>
-      <h1>Hangman</h1>
-    </>
+      <Hangman />
   );
 }
 
