@@ -9,9 +9,9 @@ export default function Header() {
   return (
     <div className="flex items-center justify-between gap-10 bg-[#121212] h-[60px] w-full">
       {/* header left wrapper */}
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-8">
         <button className="text-2xl font-bold text-white font-roboto cursor-pointer">
-          <IoMenuSharp />
+          <IoMenuSharp size={"1.5rem"}/>
         </button>
         <img
           src="/logo.png"
